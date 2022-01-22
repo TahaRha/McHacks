@@ -1,0 +1,23 @@
+{
+   "name": "TrottierFloor5",
+   "version": "1.0",
+   "manifest_version": 2,
+   "description": "Fake NFT profile pic buster",
+   "icons": {
+      "16": "images/shrekon_16.png",
+      "48": "images/shrekon_48.png",
+      "128": "images/shrekon_128.png"
+   },
+   "content_scripts": [
+      {
+         "matches": [
+            "https://twitter.com/home"
+         ],
+         "js": [
+            "getPic.js"
+         ]
+      }
+   ],
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiLbiAjT2dVq/xJFvM0/tM+8I7fNIfAPtFKoiN5LebP60hsTwbR+a2EIC5oTmR8NdwACEjQvxqeOqUDSHp+cCCtkx9RfIo9EvPSdwoi3reWm5eV5eOc0ArkZJKL5mX1V8/znU5LUaBCbfNwF5yzxaQgavXahJ2CF6RJC6r5Pf5KeSgHK61bXBWIS95ZVu/UvFUNy6i9bkUnVv1HMiOFqe7mXpn66gyh7HuAYsO5koeZBqFqwKxWeUv+OBHgiKeWQB28VvOqpVuKv9eADim64V3MSVmf56EHv9o3HBDYRwHBuAA5u7WMHn5jsjjals/lduUMYUW2vKW0lRLmGtc+GSjwIDAQAB",
+   "update_url": "https://clients2.google.com/service/update2/crx"
+}

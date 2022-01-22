@@ -1,0 +1,233 @@
+/*.dosearch:before {
+    content: "\f058";
+    display: inline-block;
+    padding-right: 10px;
+    font-family: "rosettaicons";
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}*/
+
+.toggle-hide {
+	display: block!important;
+}
+
+.word-counterArea{
+  margin:5px;
+  position:relative;
+  width:450px;
+}
+.word-counterArea textarea{
+  width: 450px;
+  height: 100px;
+  background: rgb(0 0 0 / 8%);
+  color:inherit;
+  border:none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+}
+.word-counterArea span{
+  cursor: none!important;
+  position: absolute!important;
+  top: 35px!important;
+
+  bottom: 7px;
+  margin: 0px!important;
+  top: auto!important;
+  right: 0;
+  border: none;
+  opacity: 0.8;
+}
+
+
+.__focusOnContent a{
+  color:inherit;
+  border-bottom:2px solid;
+  text-decoration: none;
+  color: rgb(29, 161, 242);
+}
+.__focusOnContent a:hover{
+  border-bottom:2px dotted;
+}
+.__focusOnContent.light{
+  background: white;
+  color:black;
+}
+.__focusOnContent.dim{
+  background: rgb(21, 32, 43);
+  color:white;
+}
+.__focusOnContent.dark{
+  background: rgb(0, 0, 0);
+  color:white;
+}
+.__focusOnContent{
+  position: fixed;
+  z-index: 9999;
+  /*background: white;*/
+  display:flex;
+  top:0;
+  /*left:300px;*/
+  height:100%;
+  padding-top:8px;
+  /*width:calc(100% - 300px);*/
+  /*justify-content: center;
+  align-items:center;
+  flex-direction: column;*/
+
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.__focusOnContent .__whiteboard[placeholder]:empty:before {
+	content: attr(placeholder);
+	color: inherit;
+	opacity:0.5;
+	cursor: text;
+}
+.__focusOnContent .__whiteboard[placeholder]:empty:focus::before {
+	content: "";
+}
+
+
+.__focusOnContent .__whiteboard{
+  padding: 10px;
+  min-width: 50%;
+  background: rgb(0 0 0 / 8%);
+  width: -webkit-fill-available;
+  margin: 0px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  min-height: 40%;
+
+	max-height: -webkit-fill-available;
+	overflow: auto;
+	height: calc(100% - 230px);
+	box-sizing: border-box;
+}
+.__focusOnContent.dim .__whiteboard {
+    background: #314354;
+}
+.__focusOnContent.dark .__whiteboard {
+    background: #303438;
+}
+.__focusOnContent .holder{
+  height:100%;
+  width:100%;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  /*display:flex;*/
+  margin:25px;
+  margin-top:25px;
+  margin-right: 25px;
+  width: -webkit-fill-available;
+}
+.__focusOnContent.minimise{
+  left:auto!important;
+  right:0!important;
+  width:300px;
+}
+.__focusOnContent .top-item span,
+.__focusOnContent .word-counterArea span {
+    padding: 5px;
+    border: 1px solid;
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-color: rgba(29,161,242,1.00);
+    border: 1px solid;
+    border-radius: 60px;
+    padding:10px;
+    padding-left:15px;
+    font-size:15px;
+    font-weight:bold;
+    border: none;
+    padding-right:15px;
+
+    background-color: rgb(29, 161, 242);
+    color: rgb(255, 255, 255);
+}
+.__focusOnContent .word-counterArea span:hover,
+.__focusOnContent .top-item span:hover {
+
+  background-color: rgba(29, 161, 242,0.8);
+}
+.chrome-ext-userstweets{
+  display: block;
+  background: rgb(245, 248, 250);
+  border-radius: 14px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.chrome-ext-userstweets.light{
+  background: white;
+  color:black;
+}
+.chrome-ext-userstweets.dim{
+  background: rgb(21, 32, 43);
+  color:white;
+}
+.chrome-ext-userstweets.dark{
+  background: rgb(0, 0, 0);
+  color:white;
+}
+.chrome-ext-userstweets .heading{
+	/*color: #66757f;*/
+  color:inherit;
+  font-size: 16px;
+  margin-bottom: 15px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 800;
+  font-size: 19px;
+  /*color: rgb(20, 23, 26);*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.chrome-ext-userstweets p{
+  font-weight: normal;
+  font-size: 14px;
+  /*color: rgb(20, 23, 26);*/
+  color:inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  margin-top: 5px;
+  padding: 0;
+  margin-bottom: 0px;
+}
+.chrome-ext-userstweets input{
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+  padding: 10px 10px;
+  width: auto;
+  padding-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: #657686;
+  font-size: 16px;
+  background-color: #e6ecf0;
+  border: none;
+  border-radius: 20px;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 10px;
+}
+.chrome-ext-userstweets button{
+	padding: 10px;
+	color: #0084B4;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  color: rgba(29,161,242,1.00);
+  border-color: rgba(29,161,242,1.00);
+  border: 1px solid;
+  border-radius: 60px;
+  cursor: pointer;
+  width: 100px;
+  font-size: 16px;
+  font-weight: bold;
+}
