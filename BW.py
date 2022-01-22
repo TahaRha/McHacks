@@ -2,9 +2,7 @@ from PIL import Image
 import numpy as np
 
 def background_white(image):
-    background_color = image.getpixel((0, 0))
-    print(background_color)
-    print(background_color == max(image.getcolors(image.size[0]*image.size[1]))[1])
+    background_color = max(image.getcolors(image.size[0]*image.size[1]))[1]
 
     width, height = image.size
     for x in range(width):

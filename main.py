@@ -1,25 +1,18 @@
 from PIL import Image
 import imagehash
 from BW import background_white
+from DIFFY import calculate_diff
+import matplotlib as plt
 
+image = Image.open("pics/pic5.png")
+background_white(image)
 
-def calculate_diff(im1path, im2path):
-    image0 = Image.open(im1path)
-    image1 = Image.open(im2path)
+avg = 0
 
-    image1.resize((64, 64))
-    image0.resize((64, 64))
+for i in range(30):
+    compPunk = Image.open("punks/punk"+str(i)+".png")
+    avg += calculate_diff(image, compPunk)
 
-    background_white(image1)
-    background_white(image0)
+avg = avg/30
 
-    hash0 = imagehash.average_hash(image0) 
-    hash1 = imagehash.average_hash(image1)
-    cutoff = 10  # maximum bits that could be different between the hashes.
-
-    print(hash0, hash1)
-    return (hash0-hash1)
-
-
-for i in range(20):
-    avg += 
+print(avg)

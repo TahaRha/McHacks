@@ -6,7 +6,7 @@ punks = Image.open("pics/punks.png")
 
 background_white(punks)
 
-for i in range(20):
+for i in range(30):
     coords = (24*i, 0, 24+24*i, 24)
-    punks.crop(coords).save("punk"+str(i)+".png")
+    punks.crop(coords).save("punks/punk"+str(i)+".png")
 
