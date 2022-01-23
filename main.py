@@ -2,9 +2,8 @@ from PIL import Image
 import imagehash
 from BW import background_white
 from DIFFY import calculate_diff
-import matplotlib as plt
 
-image = Image.open("pics/pic5.png")
+image = Image.open("pics/cyptopunk1.png ")
 background_white(image)
 
 avg = 0
