@@ -1,6 +1,8 @@
 from PIL import Image
 import numpy as np
 
+#setting the background of an image as white
+
 def background_white(image):
     background_color = max(image.getcolors(image.size[0]*image.size[1]))[1]
 
